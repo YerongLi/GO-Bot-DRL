@@ -127,6 +127,8 @@ def train_run():
         episode += 1
         done = False
         state = state_tracker.get_state()
+        print('state')
+        print(state)
         while not done:
             next_state, reward, done, success = run_round(state)
             period_reward_total += reward
